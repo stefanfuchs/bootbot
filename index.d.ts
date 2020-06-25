@@ -1,7 +1,7 @@
 // https://github.com/Charca/bootbot/pull/114/files
 // https://stackoverflow.com/questions/48708410/typescript-error-an-export-assignment-cannot-be-used-in-a-module-with-other-exp
 
-namespace BootBot {
+declare namespace BootBot {
 
   export interface BootBotOptions {
     accessToken: string;
@@ -157,7 +157,7 @@ namespace BootBot {
   }
 }
 
-class BootBot {
+declare class BootBot {
   constructor(options: BootBot.BootBotOptions);
 
   start(port?: number): void;

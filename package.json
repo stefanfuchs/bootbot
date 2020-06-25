@@ -1,6 +1,6 @@
 {
   "name": "@stefancfuchs/bootbot",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Facebook Messenger Bot Framework",
   "main": "index.js",
   "types": "index.d.ts",
