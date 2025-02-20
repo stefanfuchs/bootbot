@@ -131,7 +131,8 @@ declare namespace BootBot {
     sendTypingIndicator(milliseconds: number): Promise<any>;
 
     getUserProfile(): Promise<UserProfile>;
-    getUserProfileInstagram(): Promise<UserProfile>;
+
+    getUserProfileInstagram(): Promise<UserProfileInstagram>;
 
     conversation(factory: (convo: Conversation) => void): Conversation;
   }
@@ -198,6 +199,8 @@ declare class BootBot {
   sendTypingIndicator(userId: string, milliseconds: number): Promise<any>;
 
   getUserProfile(userId: string): Promise<BootBot.UserProfile>;
+
+  getUserProfileInstagram(): Promise<BootBot.UserProfileInstagram>;
 
   conversation(userId: string, factory: (convo: BootBot.Conversation) => void): BootBot.Conversation;
 
