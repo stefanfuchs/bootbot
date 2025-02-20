@@ -200,7 +200,7 @@ declare class BootBot {
 
   getUserProfile(userId: string): Promise<BootBot.UserProfile>;
 
-  getUserProfileInstagram(): Promise<BootBot.UserProfileInstagram>;
+  getUserProfileInstagram(userId: string): Promise<BootBot.UserProfileInstagram>;
 
   conversation(userId: string, factory: (convo: BootBot.Conversation) => void): BootBot.Conversation;
 
