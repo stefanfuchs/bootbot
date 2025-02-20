@@ -101,6 +101,12 @@ declare namespace BootBot {
     }
   }
 
+  export interface UserProfileInstagram {
+    name: string;
+    username: string;
+    profile_pic: string;
+  }
+
   export class Chat {
     say(message: string | string[] | MessageType, options?: SendApiOptions): Promise<any>;
 
@@ -125,6 +131,7 @@ declare namespace BootBot {
     sendTypingIndicator(milliseconds: number): Promise<any>;
 
     getUserProfile(): Promise<UserProfile>;
+    getUserProfileInstagram(): Promise<UserProfile>;
 
     conversation(factory: (convo: Conversation) => void): Conversation;
   }
